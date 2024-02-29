@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap');
+
 *{
     margin: 0 !important;
     padding: 0 !important;
+    font-family: "Permanent Marker", sans-serif;   
 }
 
 .link{
@@ -50,7 +53,7 @@
     line-height: 32px;
 }
 
-/*menu__menu-mobile__link link{
+/*.menu__menu-mobile__link link{
 
 }
 
