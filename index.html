@@ -10,61 +10,66 @@
 </head>
 <body>
     <section class="menu" id="menu">
-        <nav class="menu__menu-mobile" id="menu__menu-mobile">
-            
-            <!-- Logo -->
-            <div class="menu__menu-mobile__logo">
-                <a href="" class="link">
-                    <h1>LOGO</h1>
-                </a>
-            </div>
-            <!-- Fim logo -->
-
-            <!-- Menu -->
-            <div class="menu__menu-mobile-desktop">
-
-                <div class="menu__menu-mobile__icon-menu">
-                    <button class="btn_menu" id="btn_menu">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn_compras">
-                        <a href="pagCompra.html" class="link">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </a>
-                    </button>
+        <div class="menu_ shadow-sm" id="menu_">
+            <nav class="menu__menu-mobile" id="menu__menu-mobile">         
+                
+                <!-- Logo -->
+                <div class="menu__menu-mobile__logo">
+                    <a href="" class="link">
+                        <h1>LOGO</h1>
+                    </a>
                 </div>
-
-                <div class="menu__menu-mobile__ menu__menu-mobile__close" id="menu__menu-mobile__">
-                    <ul class="menu__menu-mobile__list">
-                        <li class="menu__menu-mobile__item">
-                        </li>
-                            <a href="" class="menu__menu-mobile__link link">Início</a>
-                        <li class="menu__menu-mobile__item">
-                            <a href="" class="menu__menu-mobile__link link">Sobre nós</a>
-                        </li>
-                        <li class="menu__menu-mobile__item">
-                            <a href="" class="menu__menu-mobile__link link">Produtos</a>
-                        </li>
-                        <li class="menu__menu-mobile__item">
-                            <a href="" class="menu__menu-mobile__link link">Contato</a>
-                        </li>
-                    </ul>
+                <!-- Fim logo -->
+    
+                <!-- Menu -->
+                <div class="menu__menu-mobile-desktop">
+    
+                    <div class="menu__menu-mobile__icon-menu">
+                        <button class="btn_menu" id="btn_menu">
+                            <i class="fa fa-bars" id="fa-bars" aria-hidden="true"></i>
+                            <i class="fa fa-times d-none" id="fa-times" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn_compras">
+                            <a href="pagCompra.html" class="link">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </div>
+    
+                    <div class="menu__menu-mobile__ menu__menu-mobile__close" id="menu__menu-mobile__">
+                        <ul class="menu__menu-mobile__list">
+                            <li class="menu__menu-mobile__item">
+                                <a href="" class="menu__menu-mobile__link link">Início</a>
+                            </li>
+                            <li class="menu__menu-mobile__item">
+                                <a href="" class="menu__menu-mobile__link link">Sobre nós</a>
+                            </li>
+                            <li class="menu__menu-mobile__item">
+                                <a href="" class="menu__menu-mobile__link link">Produtos</a>
+                            </li>
+                            <li class="menu__menu-mobile__item">
+                                <a href="" class="menu__menu-mobile__link link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="menu__menu-desktop">
+    
+                    </div>
+    
                 </div>
-
-                <div class="menu__menu-desktop">
-
-                </div>
-
-            </div>
-            <!-- Fim menu -->
-
-        </nav>
-
+                <!-- Fim menu -->
+    
+            </nav>
+        </div>
+        
         <!-- Search -->
         <div class="search">
             <form action="" method="post" id="search">
-                <input type="search" name="" id="">
-                <input type="submit" value="Pesquisar">
+                <div>
+                    <input type="search" name="" id="">
+                    <input type="submit" value="Pesquisar">
+                </div>
             </form>
         </div>
         <!-- Fim search -->
@@ -75,11 +80,17 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function(){
+            
             $('#btn_menu').click(function(){
+
                 if($('#menu__menu-mobile__').hasClass('menu__menu-mobile__close')){
                     $('#menu__menu-mobile__').removeClass('menu__menu-mobile__close');
+                    $('#fa-bars').addClass('d-none');
+                    $('#fa-times').removeClass('d-none');
                 }else{
                     $('#menu__menu-mobile__').addClass('menu__menu-mobile__close');
+                    $('#fa-times').addClass('d-none');
+                    $('#fa-bars').removeClass('d-none');
                 }
             });
         });
