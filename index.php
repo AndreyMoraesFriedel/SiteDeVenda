@@ -10,8 +10,9 @@
 </head>
 <body>
     <section class="menu" id="menu">
+
         <div class="menu_ shadow-sm" id="menu_">
-            <nav class="menu__menu-mobile" id="menu__menu-mobile">         
+            <nav class="menu__menu-mobile p-md-1" id="menu__menu-mobile">         
                 
                 <!-- Logo -->
                 <div class="menu__menu-mobile__logo">
@@ -22,49 +23,63 @@
                 <!-- Fim logo -->
     
                 <!-- Menu -->
-                <div class="menu__menu-mobile-desktop">
-    
+                
+                <div class="menu__menu-mobile-desktop d-md-none">
                     <div class="menu__menu-mobile__icon-menu">
+                        <button class="btn_compras">
+                            <a href="pagCompra.php" class="link">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a>
+                        </button>
                         <button class="btn_menu" id="btn_menu">
                             <i class="fa fa-bars" id="fa-bars" aria-hidden="true"></i>
                             <i class="fa fa-times d-none" id="fa-times" aria-hidden="true"></i>
                         </button>
-                        <button class="btn_compras">
-                            <a href="pagCompra.html" class="link">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </a>
-                        </button>
                     </div>
-    
+                    <!--- media 900 --->
                     <div class="menu__menu-mobile__ menu__menu-mobile__close" id="menu__menu-mobile__">
                         <ul class="menu__menu-mobile__list">
                             <li class="menu__menu-mobile__item">
-                                <a href="" class="menu__menu-mobile__link link">Início</a>
+                                <a href="index.php" class="menu__menu-mobile__link link">Início</a>
                             </li>
                             <li class="menu__menu-mobile__item">
-                                <a href="" class="menu__menu-mobile__link link">Sobre nós</a>
+                                <a href="sobrenos.php" class="menu__menu-mobile__link link">Sobre nós</a>
                             </li>
                             <li class="menu__menu-mobile__item">
-                                <a href="" class="menu__menu-mobile__link link">Produtos</a>
+                                <a href="produtos.php" class="menu__menu-mobile__link link">Produtos</a>
                             </li>
                             <li class="menu__menu-mobile__item">
-                                <a href="" class="menu__menu-mobile__link link">Contato</a>
+                                <a href="contato.php" class="menu__menu-mobile__link link">Contato</a>
                             </li>
                         </ul>
                     </div>
-    
-                    <div class="menu__menu-desktop">
-    
-                    </div>
-    
+      
                 </div>
-                <!-- Fim menu -->
+                <!-- Fim menu mobile-->
+
+                <!-- Media 901 -->
+                <div class="menu__menu-desktop d-none">
+                    <ul class="d-md-inline">
+                        <li class="menu__menu-desktop__list mr-md-2">
+                            <a class="menu__menu-desktop__link" href="index.php">Início</a>
+                        </li>
+                        <li class="menu__menu-desktop__list mr-md-2">
+                            <a class="menu__menu-desktop__link" href="sobrenos.php">Sobre nós</a>
+                        </li>
+                        <li class="menu__menu-desktop__list mr-md-2">
+                            <a class="menu__menu-desktop__link" href="produtos.php">Produtos</a>
+                        </li>
+                        <li class="menu__menu-desktop__list mr-md-2">
+                            <a class="menu__menu-desktop__link" href="contato.php">Contato</a>
+                        </li>
+                    </ul>
+                </div>
     
             </nav>
         </div>
         
         <!-- Search -->
-        <div class="search">
+        <div class="search d-md-none">
             <form action="" method="post" id="search">
                 <div>
                     <input type="search" name="" id="">
@@ -73,6 +88,10 @@
             </form>
         </div>
         <!-- Fim search -->
+
+    </section>
+
+    <section>
 
     </section>
 

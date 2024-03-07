@@ -11,57 +11,98 @@
     text-decoration: none;
 }
 
-.d-none{
-    display: none !important;
-}
-
-.d-inline{
-    display: inline;
-}
-
 .shadow-sm{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 
-.menu{
-    /* padding: 10px !important; */
+/* Mobile */
+@media (max-width: 900px){ 
+    .d-none{
+        display: none !important;
+    }
+    
+    .d-inline{
+        display: inline;
+    }
+
+    .menu{
+        /* padding: 10px !important; */
+    }
+    
+    .menu__menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px !important;
+    }
+    
+    .menu__menu-mobile__icon-menu button{
+        border: 0 !important;
+        background-color: transparent;
+        color: #4b4b4b;
+    }
+    
+    .menu__menu-mobile__{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 28px;
+        background-color: #fff;
+        height: calc(100vh - 46px);
+        transition: all 0.4s ease-out;
+    }
+    
+    .menu__menu-mobile__close{
+        left: -650px;
+    }
+    
+    .menu__menu-mobile__list{
+        padding: 20px 10px !important;
+    }
+    
+    .menu__menu-mobile__item{
+        list-style: none;
+        line-height: 32px;
+    }
+    
+    .search{
+        margin-top: 15px !important;
+    }
 }
 
-.menu__menu-mobile{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px !important;
-}
+/* Desktop */
+@media (min-width: 901px){ 
+    .mr-md-1{
+        margin-right: 10px !important;
+    }
 
-.menu__menu-mobile__icon-menu button{
-    border: 0 !important;
-    background-color: transparent;
-    color: #4b4b4b;
-}
+    .mr-md-2{
+        margin-right: 20px !important;
+    }
 
-.menu__menu-mobile__{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 28px;
-    background-color: #fff;
-    height: calc(100vh - 46px);
-    transition: all 0.4s ease-out;
-}
+    .p-md-1{
+        padding: 10px !important;
+    }
 
-.menu__menu-mobile__close{
-    left: -650px;
-}
+    .d-md-none{
+        display: none;
+    }
 
-.menu__menu-mobile__list{
-    padding: 20px 10px !important;
-}
+    .d-md-inline{
+        display: inline-flex;
+    }
 
-.menu__menu-mobile__item{
-    list-style: none;
-    line-height: 32px;
-}
+    .menu__menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.search{
-    margin-top: 15px !important;
+    .menu__menu-desktop__list{
+        list-style: none;
+    }
+
+    .menu__menu-desktop__link{
+        text-decoration: none;
+        color: #4b4b4b;
+    }
 }
